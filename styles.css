@@ -1,8 +1,21 @@
+html * {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  line-height: 1.625;
+  font-family: arial;
+}
+
 body
 {
     background-image: url('../assets/background.jpg');
 }
 
+#mailer
+{
+    display: block;
+
+}
 footer
 {
     position: fixed;
@@ -13,7 +26,27 @@ footer
 
 .spreadEqualyCentered
 {
-    width:100%;
-    margin: auto;
+    min-width: 400px;
+    width:50%;
+    margin: 20px auto;
     display: flex;
+    padding: 0
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+ul#socials li a img
+{
+    scale:50%
+
+}
+li
+{
+    min-width: 0;
+    padding:0;
+    margin:0;
+    width:100%;
 }
