@@ -1,4 +1,11 @@
-html * {
+:root
+{
+    --bordersize:3px;
+
+}
+
+html * 
+{
   font-size: 22px;
   color: white;
   text-align: center;
@@ -11,17 +18,38 @@ body
     background-image: url('../assets/background.jpg');
 }
 
-#mailer
+label, input
 {
     display: block;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+nav ul li a
+{
+    padding: 2px 8px;
+    border:solid;
+    border-color: white;
+    border-width: var(--bordersize);
+    border-style: solid;
+    text-decoration: none;
+}
+
+ul#socials li a img
+{
+    scale:50%
 
 }
-footer
+
+li
 {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    min-width: 0;
+    padding:0;
+    margin:0;
+    width:100%;
 }
 
 .spreadEqualyCentered
@@ -33,20 +61,38 @@ footer
     padding: 0
 }
 
-ul
+#mail
 {
-    list-style-type: none;
+    color:white;
+    background-color: transparent;
+    border: soldid;
+    border-color: white;
+    border-width: var(--bordersize);
+    border-style: solid;
 }
 
-ul#socials li a img
+#mailer
 {
-    scale:50%
-
+    position:absolute;
+    bottom:40%;
+    left:50%;
+    margin:auto;
+    display: block;
+    transform: translate(-50%,-50%);
 }
-li
+#socials
 {
-    min-width: 0;
-    padding:0;
-    margin:0;
-    width:100%;
+    max-width: 30px;
+}
+
+footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
 }
