@@ -19,6 +19,7 @@ body
     background-image: url('assets/background.jpg');
 }
 
+
 label, input
 {
     display: block;
@@ -42,7 +43,6 @@ nav ul li a
 ul#socials li a img
 {
     scale:50%
-
 }
 
 li
@@ -57,6 +57,13 @@ li
 {
     min-width: 400px;
     width:50%;
+    margin: 20px auto;
+    display: flex;
+    padding: 0
+}
+
+#emailInput
+{
     margin: 20px auto;
     display: flex;
     padding: 0
@@ -81,6 +88,19 @@ li
     display: block;
     transform: translate(-50%,-50%);
 }
+
+#bandsintown
+{
+    overflow: auto;
+    visibility: hidden;
+    position: relative;
+    width:60%;
+    height:60%;
+    margin:80px auto;
+    padding: 80px 0;
+    display:block;
+}
+
 #socials
 {
     max-width: 30px;
@@ -88,6 +108,7 @@ li
 
 footer
 {
+    display: block;
     position: fixed;
     left: 0;
     bottom: 0;

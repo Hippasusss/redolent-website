@@ -2,21 +2,29 @@
 <head>
     <link rel=stylesheet href=styles.css>
     <title>rEDOLENT</title>
+    <script defer type="text/javascript" src="index.js"></script>
 </head>
 <body>
     <div id=mailer>
-        <form>
+        <form id="emailform">
             <label for=mail> sign up to out mailing list ↓</label>
-            <input id=mail type=email></input>
+            <div id="emailInput">
+                <input id=mail type=email></input>
+                <button id=mail type="submit" form="emailform" value="Submit">:></button>
+            </div>
+            <span id="mailthx">thx!</span>
         </form>
+    </div>
+    <div id=bandsintown>
+<script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="humour" data-display-local-dates="false" data-display-past-dates="true" data-auto-style="false" data-text-color="#000000" data-link-color="#111111" data-background-color="rgba(0,0,0,0)" data-display-limit="" data-display-start-time="false" data-link-text-color="#ffffff" data-display-lineup="false" data-display-play-my-city="true" data-separator-color="rgba(124,124,124,0.25)"></a>
     </div>
 
     <footer>
         <nav>
             <ul class=spreadEqualyCentered>
-                <li><a href="">mail</a></li>
+                <li><a onclick="onMailClick()">mail</a></li>
                 <li><a href="https://redolent.myshopify.com">merch</a></li>
-                <li><a href="">live</a></li>
+                <li><a onclick="onLiveClick()">live</a></li>
             </ul>
         </nav>
         <ul class=spreadEqualyCentered id=socials>
