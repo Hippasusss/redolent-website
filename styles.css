@@ -1,0 +1,19 @@
+body
+{
+    background-image: url('../assets/background.jpg');
+}
+
+footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.spreadEqualyCentered
+{
+    width:100%;
+    margin: auto;
+    display: flex;
+}
