@@ -136,12 +136,21 @@ input[data-autocompleted] {
 {
     background-color: rgba(256,256,256,0.3);
 }
-#mailthx
+
+.mce_inline_error
 {
-    visibility: hidden;
+    background-color: transparent;
 }
 
+#mce-responses
+{
+    height:40px;
+}
 
+.response
+{
+    height:40px;
+}
 
 #bandsintown
 {
