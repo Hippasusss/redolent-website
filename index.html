@@ -5,25 +5,38 @@
     <script defer type="text/javascript" src="index.js"></script>
 </head>
 <body>
-    <div id=mailer>
-        <form id="emailform">
-            <label for=mail> sign up to out mailing list ↓</label>
-            <div id="emailInput">
-                <input id=mail type=email form="emailform"></input>
-                <button id=mail type="submit" form="emailform" value="Submit">></button>
-            </div>
-            <span id="mailthx">thx!</span>
-        </form>
+    <div id="mc_embed_shell">
+
+        <div id="mc_embed_signup">
+            <form action="https://gmail.us17.list-manage.com/subscribe/post?u=2da749d43c8a65712fb31de93&amp;id=44d77fc558&amp;f_id=006661e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
+                <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group"><label for="mce-EMAIL">sign up to our mailing list ↓ </label>
+                    <div id="emailInputAndButton"class="spreadEqualyCentered">
+                        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
+                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value=">">
+                    </div>
+                    <div id="mce-responses" class="clear foot">
+                        <div class="response" id="mce-error-response" style="display: none;"></div>
+                        <div class="response" id="mce-success-response" style="display: none;"></div>
+                    </div>
+                    <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                        /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                        <input type="text" name="b_2da749d43c8a65712fb31de93_44d77fc558" tabindex="-1" value="">
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
+    <span id="mailthx">thx!</span>
     <div id=bandsintown>
-<script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="humour" data-display-local-dates="false" data-display-past-dates="true" data-auto-style="false" data-text-color="#000000" data-link-color="#cacaca" data-background-color="rgba(0,0,0,0)" data-display-limit="" data-display-start-time="false" data-link-text-color="#ffffff" data-display-lineup="false" data-display-play-my-city="true" data-separator-color="rgba(1,1,1,1)"></a>
+        <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="humour" data-display-local-dates="false" data-display-past-dates="true" data-auto-style="false" data-text-color="#000000" data-link-color="#cacaca" data-background-color="rgba(0,0,0,0)" data-display-limit="" data-display-start-time="false" data-link-text-color="#ffffff" data-display-lineup="false" data-display-play-my-city="true" data-separator-color="rgba(1,1,1,1)"></a>
     </div>
 
     <footer>
         <nav>
             <ul class=spreadEqualyCentered>
                 <li><a onclick="onMailClick()">mail</a></li>
-                <li><a href="https://redolent.myshopify.com">merch</a></li>
+                <li><a href="https://redolentredolent.myshopify.com">merch</a></li>
                 <li><a onclick="onLiveClick()">live</a></li>
             </ul>
         </nav>

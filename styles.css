@@ -17,7 +17,9 @@ body
 {
     background-color: black;
     background-image: url('assets/background.jpg');
+    background-position: center;
     margin-bottom: 224px;
+    background-size: cover;
 }
 
 
@@ -63,19 +65,26 @@ li
     padding: 0
 }
 
-#emailInput
+#mc_embed_shell
 {
-    margin: 20px auto;
-    display: flex;
-    padding: 0
+    position:absolute;
+    padding: 0;
+    bottom:47%;
+    left:50%;
+    margin:auto;
+    display: block;
+    transform: translate(-50%,-50%);
 }
 
-#mailthx
+#emailInputAndButton
 {
-    visibility: hidden;
+    margin: auto;
+    padding: 0;
+    display:flex;
 }
 
-#mail
+
+#mce-Email
 {
     color:white;
     background-color: transparent;
@@ -83,17 +92,28 @@ li
     border-color: white;
     border-width: var(--bordersize);
     border-style: solid;
+    display: inline;
+    max-width: none;
+    width: 90%
+}
+#mc-embedded-subscribe
+{
+    color:white;
+    background-color: transparent;
+    border: soldid;
+    border-color: white;
+    border-width: var(--bordersize);
+    border-style: solid;
+    display: inline;
+    width: 10%;
 }
 
-#mailer
+#mailthx
 {
-    position:absolute;
-    bottom:40%;
-    left:50%;
-    margin:auto;
-    display: block;
-    transform: translate(-50%,-50%);
+    visibility: hidden;
 }
+
+
 
 #bandsintown
 {
