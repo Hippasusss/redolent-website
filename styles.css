@@ -23,7 +23,7 @@ body
 }
 
 
-label, input
+label 
 {
     display: block;
 }
@@ -73,39 +73,49 @@ li
     left:50%;
     margin:auto;
     display: block;
+    padding: 0;
     transform: translate(-50%,-50%);
+}
+
+form
+{
+    padding:0;
+    margin:0;
 }
 
 #emailInputAndButton
 {
     margin: auto;
     padding: 0;
-    display:flex;
 }
-
 
 #mce-Email
 {
     color:white;
     background-color: transparent;
-    border: soldid;
+    border: solid;
     border-color: white;
     border-width: var(--bordersize);
     border-style: solid;
-    display: inline;
+    border-collapse: collapse;
+    display: inline-block;
     max-width: none;
-    width: 90%
+    width: 90%;
+    padding: 0;
 }
 #mc-embedded-subscribe
 {
+    padding: 0;
     color:white;
     background-color: transparent;
-    border: soldid;
+    border: solid;
     border-color: white;
     border-width: var(--bordersize);
     border-style: solid;
-    display: inline;
+    border-collapse: collapse;
+    display: inline-block;
     width: 10%;
+    overflow:hidden;
 }
 
 #mailthx
@@ -121,10 +131,34 @@ li
     visibility: hidden;
     position: relative;
     width:60%;
-    height:60%;
-    margin:80px auto;
-    padding: 80px 0;
+    height:80%;
+    margin: 100px auto;
+    padding:0;
     display:block;
+}
+
+.bit-offers-text
+{
+    color:black;
+}
+
+path
+{
+    visibility: hidden;
+}
+
+div::-webkit-scrollbar 
+{
+    width: 12px;
+    color:white;
+}
+
+.bit-top-track-button, .bit-nav-bar
+{
+    visibility: hidden;
+    max-height:0;
+    display:none;
+
 }
 
 #socials
