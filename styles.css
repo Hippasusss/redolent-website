@@ -43,6 +43,11 @@ nav ul li a
     text-decoration: none;
 }
 
+a 
+{
+    cursor: pointer;
+}
+
 ul#socials li a img
 {
     scale:50%
@@ -92,32 +97,45 @@ form
 #mce-Email
 {
     color:white;
+    padding: 0;
     background-color: transparent;
     border: solid;
     border-color: white;
     border-width: var(--bordersize);
     border-style: solid;
-    border-collapse: collapse;
+    border-left: 1px
     display: inline-block;
     max-width: none;
     width: 90%;
-    padding: 0;
 }
 #mc-embedded-subscribe
 {
-    padding: 0;
     color:white;
+    padding: 0;
     background-color: transparent;
     border: solid;
     border-color: white;
     border-width: var(--bordersize);
     border-style: solid;
-    border-collapse: collapse;
+    border-right: 0;
     display: inline-block;
+    max-width: none;
     width: 10%;
-    overflow:hidden;
 }
 
+input[data-autocompleted] {
+    background-color: transparent !important;
+}
+
+#mce-Email:hover
+{
+    background-color: rgba(256,256,256,0.3);
+}
+
+#mc-embedded-subscribe:hover
+{
+    background-color: rgba(256,256,256,0.3);
+}
 #mailthx
 {
     visibility: hidden;
@@ -147,10 +165,19 @@ path
     visibility: hidden;
 }
 
-div::-webkit-scrollbar 
+html::-webkit-scrollbar 
 {
-    width: 12px;
-    color:white;
+    color: white;
+}
+
+html::-webkit-scrollbar-thumb
+{
+    color: white;
+}
+
+html::-webkit-scrollbar-track
+{
+    color: transparent;
 }
 
 .bit-top-track-button, .bit-nav-bar
