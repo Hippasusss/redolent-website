@@ -49,8 +49,6 @@ async function addEmailToMailChimpDB(email)
     }
 }
 
-
-
 emailForm.addEventListener("submit", (e) => 
 {
     e.preventDefault();
@@ -61,8 +59,6 @@ emailForm.addEventListener("submit", (e) =>
     email.value = "";
 
 });
-
-
 
 function onLiveClick()
 {
