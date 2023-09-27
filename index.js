@@ -4,8 +4,6 @@ var mailThanks= document.getElementById('mailthx');
 const hidden = 'hidden'
 const visible= 'visible'
 
-var emailForm = document.getElementById("emailform");
-
 function onLiveClick()
 {
     if(mailInputContainer.style.visibility = visible)
@@ -13,7 +11,6 @@ function onLiveClick()
         mailInputContainer.style.visibility = hidden;
     }
     bandsInTownContainer.style.visibility = visible;
-
 }
 
 function onMailClick()
