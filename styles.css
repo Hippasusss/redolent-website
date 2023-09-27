@@ -165,19 +165,17 @@ path
     visibility: hidden;
 }
 
-html::-webkit-scrollbar 
+div::-webkit-scrollbar 
 {
-    color: white;
+    width: 8px;
+    background-color: transparent;
 }
 
-html::-webkit-scrollbar-thumb
+div::-webkit-scrollbar-thumb
 {
-    color: white;
-}
-
-html::-webkit-scrollbar-track
-{
-    color: transparent;
+    width: 8px;
+    background-color: white;
+    border-radius: 4px;
 }
 
 .bit-top-track-button, .bit-nav-bar
