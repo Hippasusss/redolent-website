@@ -103,7 +103,7 @@ form
     border-color: white;
     border-width: var(--bordersize);
     border-style: solid;
-    border-left: 1px
+    border-left: 0;
     display: inline-block;
     max-width: none;
     width: 90%;
