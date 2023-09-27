@@ -70,6 +70,11 @@ li
     padding: 0
 }
 
+#mailthx
+{
+    visibility: hidden;
+}
+
 #mail
 {
     color:white;
