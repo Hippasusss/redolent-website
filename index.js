@@ -2,22 +2,25 @@ var mailInput = document.getElementById('mailer');
 var liveDates = document.getElementById('bandsintown');
 const hidden = 'hidden'
 const visible= 'visible'
-
 function onLiveClick()
 {
-    if(mailInputContainer.style.visibility = visible)
+    if(mailInput.style.visibility = visible)
     {
-        mailInputContainer.style.visibility = hidden;
+        mailInput.style.visibility = hidden;
     }
-    bandsInTownContainer.style.visibility = visible;
+    liveDates.style.visibility = visible;
 
 }
 
 function onMailClick()
 {
-    if(bandsInTownContainer.style.visibility = visible)
+    if(liveDates.style.visibility = visible)
     {
-        bandsInTownContainer.style.visibility = hidden;
+        liveDates.style.visibility = hidden;
     }
-    mailInputContainer.style.visibility = visible;
+    mailInput.style.visibility = visible;
+}
+
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
