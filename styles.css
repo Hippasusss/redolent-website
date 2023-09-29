@@ -212,3 +212,12 @@ footer
 input:focus {
     outline: none;
 }
+
+#logo
+{
+    position: absolute;
+    margin-top: 10%;
+    width: 30%;
+    transform: translate(-50%,-50%);
+
+}
