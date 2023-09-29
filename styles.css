@@ -74,7 +74,7 @@ li
 {
     position:absolute;
     padding: 0;
-    bottom:47%;
+    bottom:37%;
     left:50%;
     margin:auto;
     display: block;
@@ -215,9 +215,9 @@ input:focus {
 
 #logo
 {
-    position: absolute;
-    margin-top: 10%;
-    width: 30%;
-    transform: translate(-50%,-50%);
+    position: relative;
+    padding-bottom: 60px;
+    margin: auto;
+    width: 500px;
 
 }
