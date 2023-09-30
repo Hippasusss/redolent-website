@@ -6,120 +6,87 @@
 
 html * 
 {
-  font-size: 22px;
-  color: white;
-  text-align: center;
-  line-height: 1.625;
-  font-family: arial;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 1.625;
+    font-family: arial;
 }
 
 body
 {
     background-color: black;
     background-image: url('assets/background.jpg');
+    background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 224px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-}
-
-
-label 
-{
-    display: block;
-}
-
-ul
-{
-    list-style-type: none;
-}
-
-nav ul li a
-{
-    padding: 2px 8px;
-    border:solid;
-    border-color: white;
-    border-width: var(--bordersize);
-    border-style: solid;
-    text-decoration: none;
-}
-
-a 
-{
-    cursor: pointer;
-}
-
-ul#socials li a img
-{
-    scale:50%
-}
-
-li
-{
-    min-width: 0;
-    padding:0;
+    margin-bottom: 165;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
     margin:0;
-    width:100%;
 }
 
-.spreadEqualyCentered
+#logo
 {
-    min-width: 400px;
-    width:50%;
-    margin: 20px auto;
-    display: flex;
-    padding: 0
+    padding-bottom: 60px;
+    margin: auto;
+    width: 100%;
+
 }
 
 #mc_embed_shell
 {
     position:absolute;
-    padding: 0;
-    bottom:37%;
     left:50%;
+    bottom:30%;
     margin:auto;
     display: block;
     padding: 0;
     transform: translate(-50%,-50%);
+    width:600px;
+    max-width: 90%;
 }
 
 form
 {
-    padding:0;
     margin:0;
 }
 
-#emailInputAndButton
+
+#emailInputAndButtonContainer
 {
     margin: auto;
     padding: 0;
+    width: 80%;
+}
+
+.emailInputAndButton
+{
+    color:white;
+    padding: 0;
+    background-color: transparent;
+    border: solid;
+    border-color: white;
+    border-width: var(--bordersize);
+    border-style: solid;
+    display: inline-block;
+
 }
 
 #mce-Email
 {
-    color:white;
-    padding: 0;
-    background-color: transparent;
-    border: solid;
-    border-color: white;
-    border-width: var(--bordersize);
-    border-style: solid;
-    border-left: 0;
-    display: inline-block;
-    max-width: none;
     width: 90%;
+    border-left: 0;
 }
 #mc-embedded-subscribe
 {
-    color:white;
-    padding: 0;
-    background-color: transparent;
-    border: solid;
-    border-color: white;
-    border-width: var(--bordersize);
-    border-style: solid;
-    border-right: 0;
-    display: inline-block;
-    max-width: none;
     width: 10%;
 }
 
@@ -195,9 +162,77 @@ div::-webkit-scrollbar-thumb
 
 }
 
-#socials
+.spreadEqualyCentered
 {
-    max-width: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* */
+ul
+{
+    list-style-type: none;
+}
+
+#socialsUL
+{
+    margin: auto;
+    width: 400px;
+    max-width: 90%;
+}
+
+nav
+{
+    margin: auto;
+    width: 500px;
+    max-width: 90%;
+}
+
+
+/* elements from nav bar */
+nav ul li a
+{
+    padding: 2px 8px;
+    border:solid;
+    border-color: white;
+    border-width: var(--bordersize);
+    border-style: solid;
+    text-decoration: none;
+    margin: auto;
+}
+
+a 
+{
+    cursor: pointer;
+}
+
+ul#socialsUL li a img
+{
+    scale:50%;
+    margin: auto;
+    width:auto;
+    left:0;
+    top:0;
+}
+
+ul#socialsUL li a
+{
+    margin: auto;
+    display: inline-block;
+    width:100%;
+    height:100%;
+    left:0;
+}
+
+li
+{
+    min-width: 0;
+    padding:0;
+    margin:0;
+    width:100%;
 }
 
 footer
@@ -207,44 +242,17 @@ footer
     left: 0;
     bottom: 0;
     width: 100%;
+    max-width: 100%;
 }
 
 input:focus {
     outline: none;
 }
 
-#logo
+
+@media screen and (max-width: 400px)
 {
-    position: relative;
-    padding-bottom: 60px;
-    margin: auto;
-    width: 500px;
 
-}
-
-@media only screen and (max-width: 400px)
-{
-    ul#socials li a img
-    {
-        scale:80%
-    }
-
-    nav ul li a
-    {
-        padding: 2px 18px;
-        border:solid;
-        border-color: white;
-        border-width: var(--bordersize);
-        border-style: solid;
-        text-decoration: none;
-    }
-    li
-    {
-        min-width: 0;
-        padding:0;
-        margin:0;
-        width:100%;
-    }
 
 }
 
