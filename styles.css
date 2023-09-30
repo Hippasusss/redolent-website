@@ -166,7 +166,6 @@ div::-webkit-scrollbar-thumb
 {
     margin: auto;
     display: flex;
-    justify-content: center;
     padding: 0;
     margin: 0;
 }
@@ -177,11 +176,28 @@ ul
     list-style-type: none;
 }
 
-#socialsUL
+li
 {
-    margin: auto;
-    width: 400px;
-    max-width: 90%;
+    min-width: 0;
+    padding:0;
+    margin:0;
+    width:100%;
+}
+
+
+footer
+{
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+a 
+{
+    cursor: pointer;
 }
 
 nav
@@ -204,55 +220,44 @@ nav ul li a
     margin: auto;
 }
 
-a 
+#socialsUL
 {
-    cursor: pointer;
-}
-
-ul#socialsUL li a img
-{
-    scale:50%;
     margin: auto;
-    width:auto;
-    left:0;
-    top:0;
+    width: 400px;
+    max-width: 90%;
+    text-align: left;
+    margin:20px auto;
 }
 
 ul#socialsUL li a
 {
-    margin: auto;
+    position:relative;
     display: inline-block;
     width:100%;
     height:100%;
     left:0;
+    top:0;
+    text-align: left;
 }
 
-li
+ul#socialsUL li a img
 {
-    min-width: 0;
-    padding:0;
-    margin:0;
-    width:100%;
-}
-
-footer
-{
-    display: block;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    position:relative;
+    display: inline-block;
+    scale: 70%;
     width: 100%;
-    max-width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    left: 0;
+    top: 0;
+    text-align: left;
 }
+
+
 
 input:focus {
     outline: none;
 }
 
 
-@media screen and (max-width: 400px)
-{
-
-
-}
 
