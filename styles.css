@@ -15,7 +15,7 @@ html *
 
 body
 {
-    background-image: url('assets/background.jpg');
+    background-image: url('assets/background2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
@@ -43,7 +43,7 @@ body
 {
     position:absolute;
     left:50%;
-    bottom:30%;
+    bottom:15%;
     margin:auto;
     display: block;
     padding: 0;
