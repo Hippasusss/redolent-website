@@ -1,22 +1,33 @@
 var mailInputContainer = document.getElementById('mc_embed_shell');
 var bandsInTownContainer = document.getElementById('bandsintown');
 var mailThanks= document.getElementById('mailthx');
+var currentlyVisableContainer = mailInputContainer;
 const hidden = 'hidden'
 const visible= 'visible'
 const fadeTime = 10 
 
+document.addEventListener('DOMContentLoaded', function() {
+    bandsInTownContainer.style.display ='none';
+}, false);
+
 function onLiveClick()
 {
-    fade(mailInputContainer);
-    unfade(bandsInTownContainer);
-    bandsInTownContainer.style.visibility = visible;
+    activateContainer(bandsInTownContainer);
 }
 
 function onMailClick()
 {
-    fade(bandsInTownContainer);
-    unfade(mailInputContainer);
-    mailInputContainer.style.visibility = visible;
+    activateContainer(mailInputContainer);
+}
+
+function activateContainer(container)
+{
+    if(currentlyVisableContainer != container)
+    {
+        fade(currentlyVisableContainer);
+        unfade(container);
+        currentlyVisableContainer = container;
+    }
 }
 
 function fade(element) {
