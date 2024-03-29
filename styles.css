@@ -78,6 +78,7 @@ form
     border-width: var(--bordersize);
     border-style: solid;
     display: inline-block;
+    margin-top: 5px;
 
 }
 
@@ -88,7 +89,7 @@ form
 }
 #mc-embedded-subscribe
 {
-    width: 10%;
+    width: 60px;
 }
 
 input[data-autocompleted] {
@@ -123,12 +124,17 @@ input[data-autocompleted] {
 #bandsintown
 {
     overflow: auto;
-    visibility: hidden;
+    opacity: 0;
     width:1200px;
     max-width:95%;
     transform: translate(-50%,0);
-    top: 100px;
-    bottom:200px;
+    top: 50px;
+    bottom:300px;
+}
+
+.bit-widget
+{
+    background-color: rgba(0,0,0,0.3);
 }
 
 .bit-offers-text
@@ -154,7 +160,7 @@ div::-webkit-scrollbar-thumb
     border-radius: 4px;
 }
 
-.bit-top-track-button, .bit-nav-bar
+.bit-top-track-button, .bit-nav-bar, .bit-rsvp-container, .bit-play-my-city-button
 {
     visibility: hidden;
     max-height:0;
@@ -199,6 +205,7 @@ footer
 #albumPreOrder
 {
     padding-bottom: 20px;
+    font-size: 20px;
 }
 
 a 
